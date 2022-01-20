@@ -1,0 +1,78 @@
+body{   
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-family: "nature_beauty";
+    color: white;
+    margin: 20px;
+}
+
+
+.container{
+    width: 500px;
+    height: 500px;
+    border: 5px dotted white;
+    margin-left: 500px;
+    
+}
+
+#carre{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    border: 1px solid;
+    position: relative;
+    left: 170px;
+    top: 150px;
+    animation: rotation 5s linear infinite;
+}
+
+button{
+    position: relative;
+    left: 700px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: cadetblue;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@keyframes rotation{
+    from{
+        transform:rotateZ(0deg);
+        background-color: brown;
+    }
+    25%{
+        transform:rotateZ(90deg);
+        background-color: yellow;
+    }
+    50%{
+        transform:rotateZ(180deg);
+        background-color: green;
+    }
+    75%{
+        transform:rotateZ(270deg);
+        background-color: blueviolet;
+    }
+    100%{
+        transform:rotateZ(360deg);
+        background-color: orange;
+    }
+}
+
+
+
+
+
+@font-face {
+    font-family: "nature_beauty";
+    src: url("../asset/police/Nature\ Beauty.ttf");
+   }
